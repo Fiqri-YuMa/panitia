@@ -1,0 +1,198 @@
+/* ===== PALANG MERAH INDONESIA THEME ===== */
+:root {
+  --primary: #E30613;  /* Merah PMI */
+  --primary-light: #ff4d4d;
+  --primary-dark: #b30000;
+  --secondary: #FFFFFF; /* Putih */
+  --accent: #2C3E50;    /* Abu-abu gelap */
+  --light: #F5F5F5;
+  --text: #333333;
+  --border: #E0E0E0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  background: var(--secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid var(--primary);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== FORM ELEMENTS ===== */
+.form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 15px;
+  transition: all 0.3s;
+  background-color: var(--secondary);
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(227, 6, 19, 0.1);
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23E30613' stroke='%23E30613' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ===== BUTTON STYLES ===== */
+.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 14px 28px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(227, 6, 19, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* ===== MARKAS SECTION ===== */
+#markas_section {
+  background-color: rgba(227, 6, 19, 0.05);
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+  border-left: 4px solid var(--primary);
+}
+
+#markas_section label {
+  color: var(--primary);
+}
+
+/* ===== HEADER STYLE ===== */
+.header {
+  background-color: var(--primary);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-group {
+  animation: fadeInUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+/* Style untuk disabled select */
+select:disabled {
+  background-color: #f5f5f5;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+/* Notifikasi pre-registered */
+.pre-reg-notif {
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border-left: 4px solid #2196f3;
+}
+
+.form-group:nth-child(1) { animation-delay: 0.1s; }
+.form-group:nth-child(2) { animation-delay: 0.2s; }
+.form-group:nth-child(3) { animation-delay: 0.3s; }
+.form-group:nth-child(4) { animation-delay: 0.4s; }
+.form-group:nth-child(5) { animation-delay: 0.5s; }
