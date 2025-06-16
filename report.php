@@ -11,7 +11,6 @@ $db = new mysqli('localhost', 'root', '', 'panitia_db');
 </head>
 <body>
   <div class="header">
-    <img src="pmi-logo.png" alt="Logo PMI" class="header-logo">
     <h1>LAPORAN PENDAFTAR</h1>
   </div>
 
